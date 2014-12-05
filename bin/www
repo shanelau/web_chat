@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-var debug = require('debug')('SimpleChat');
+//var debug = require('debug')('SimpleChat');
 var app = require('../app');
 var HashMap = require('hashmap').HashMap;
 var map = new HashMap();
 
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-//不完善的地方:意外短线检测机制
+//不完善的地方:意外断线检测机制
 app.set('port', process.env.PORT || 3000);
  
 io.on('connection', function(socket){
