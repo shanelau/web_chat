@@ -1,0 +1,23 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font: 13px Helvetica, Arial; }
+form { padding: 3px; position: fixed; bottom: 0; width: 70%; margin-left: 20px; 
+    margin-bottom: 20px}
+form input { border:2px solid #999999;; padding: 10px; width: 85%; }
+form button { width: 80px;padding: 10px; }
+
+#top_div {background:#3d3d3d;height: 40px; width: 100%;font-size:18px; position: fixed;
+        top: 0px;}
+#left_div {margin-bottom:60px; margin-top: 40px; position: fixed; top: 0px; 
+          float:left; width:30%;}
+#right_div {float:right; width:70%; }
+#left_main_div {width: 80%; margin-left: auto; margin-right: auto; margin-top: 30px;}
+
+#messages{ list-style-type: none; margin: 0; margin-bottom:100px; margin-top: 40px;
+        padding: 0;}
+#messages li { padding: 5px 10px;}
+#messages li:nth-child(odd) { background: #eee; }
+
+#online_list_label_div{background:#999999; height:40px; text-align: center; line-height:40px;}
+#online_users_div div {height:40px; border:2px solid #999999; border-top:0; line-height:40px;}
+#online_users_div div span {margin-left: 20px;}
+#online_users_div div a {float:right; margin-right: 20px;}

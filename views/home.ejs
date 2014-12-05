@@ -1,0 +1,50 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/client.css" rel="stylesheet">
+    <title><%= title%></title>
+  </head>
+  <body>
+
+    <div id="top_div">
+        <div style="line-height: 40px;color:#fff;">
+            <span style="text-align:left;margin-left:30px">SimpleChat</span>
+            <span id="dialog_span" style="margin-left:500px"></span> 
+            <span style="float:right;margin-right:20px;">
+              <span id="username"><%= username %></span>&nbsp;&nbsp;|
+              <a style="color:#fff;" href="/logout">退出</a>
+            </span>
+        </div>
+    </div>
+
+    <div id="left_div">
+      <div id="left_main_div">
+        <div id="online_list_label_div">
+          <span style="font-size:18px;">在线列表</span>          
+        </div>
+        <div id="online_users_div">
+        </div>
+      </div>      
+    </div>
+
+    <div id="right_div">
+      <ul id="messages"></ul>
+      <form class="form-horizontal" action="">
+        <div class="controls">
+          <input id="m" autocomplete="off" class="input-xlarge">
+          <input id='to_text' type="hidden">
+          <button class="btn btn-primary">Send</button>
+        </div>       
+      </form>
+    </div>
+
+    <!--<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>--> 
+    <!--<script src="/socket.io/socket.io-1.2.0.js"></script>-->
+    <script src="http://172.24.21.5:3000/socket.io/socket.io.js"></script>
+    <script src="/javascripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/javascripts/client.js"></script>
+  </body>
+</html>

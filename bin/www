@@ -1,0 +1,53 @@
+#!/usr/bin/env node
+var debug = require('debug')('SimpleChat');
+var app = require('../app');
+var HashMap = require('hashmap').HashMap;
+var map = new HashMap();
+
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
+//不完善的地方:意外短线检测机制
+app.set('port', process.env.PORT || 3000);
+ 
+io.on('connection', function(socket){
+
+    console.log('there is a user connected');
+
+    socket.on('login', function(username){
+        socket.name = username;
+        map.set(socket.name,socket); 
+
+        console.log(socket.name+'---login');
+        console.log('client size after login:::'+map.count());       
+         
+        //boradcast to all clients to update online users
+        io.emit('online',map.keys());
+        
+    });
+     
+    socket.on('disconnect', function(){
+    	map.remove(socket.name);
+        
+        console.log(socket.name+'--logout');
+        console.log('client size after logout:::'+map.count());
+
+        //boradcast to all clients to update online users
+        io.emit('online',map.keys());
+
+    });
+     
+    //transfer the message
+    socket.on('message', function(message){
+        var msgRecv = JSON.parse(message);
+        var toSocket = map.get(msgRecv.to);
+        if(toSocket){
+            toSocket.emit('message', message);
+        }      
+    });
+   
+});
+
+http.listen(3000, function(){
+  console.log('http listening on port:3000');
+});
+

@@ -1,0 +1,59 @@
+[2014-12-05 10:44:05.298] [INFO] console - [ { id: 3,
+    username: 'a',
+    password: 'a',
+    time: Tue Dec 02 2014 16:20:35 GMT+0800 (CST) } ]
+[2014-12-05 10:44:05.426] [INFO] console - there is a user connected
+[2014-12-05 10:44:05.456] [INFO] console - a---login
+[2014-12-05 10:44:05.457] [INFO] console - client size after login:::2
+[2014-12-05 10:48:21.414] [INFO] console - a--logout
+[2014-12-05 10:48:21.414] [INFO] console - client size after logout:::1
+[2014-12-05 10:48:24.340] [INFO] console - [ { id: 3,
+    username: 'a',
+    password: 'a',
+    time: Tue Dec 02 2014 16:20:35 GMT+0800 (CST) } ]
+[2014-12-05 10:48:24.450] [INFO] console - there is a user connected
+[2014-12-05 10:48:24.505] [INFO] console - a---login
+[2014-12-05 10:48:24.506] [INFO] console - client size after login:::2
+[2014-12-05 10:48:44.327] [INFO] console - b--logout
+[2014-12-05 10:48:44.327] [INFO] console - client size after logout:::1
+[2014-12-05 10:48:46.346] [INFO] console - [ { id: 4,
+    username: 'b',
+    password: 'b',
+    time: Tue Dec 02 2014 18:56:54 GMT+0800 (CST) } ]
+[2014-12-05 10:48:46.468] [INFO] console - there is a user connected
+[2014-12-05 10:48:46.517] [INFO] console - b---login
+[2014-12-05 10:48:46.518] [INFO] console - client size after login:::2
+[2014-12-05 11:05:50.915] [INFO] console - a--logout
+[2014-12-05 11:05:50.916] [INFO] console - client size after logout:::1
+[2014-12-05 11:06:00.183] [INFO] console - b--logout
+[2014-12-05 11:06:00.184] [INFO] console - client size after logout:::0
+[2014-12-05 11:06:05.098] [INFO] console - http listening on port:3000
+[2014-12-05 11:06:10.344] [INFO] console - [ { id: 3,
+    username: 'a',
+    password: 'a',
+    time: Tue Dec 02 2014 16:20:35 GMT+0800 (CST) } ]
+[2014-12-05 11:06:10.523] [INFO] console - there is a user connected
+[2014-12-05 11:06:10.563] [INFO] console - a---login
+[2014-12-05 11:06:10.563] [INFO] console - client size after login:::1
+[2014-12-05 11:06:13.129] [INFO] console - [ { id: 4,
+    username: 'b',
+    password: 'b',
+    time: Tue Dec 02 2014 18:56:54 GMT+0800 (CST) } ]
+[2014-12-05 11:06:13.243] [INFO] console - there is a user connected
+[2014-12-05 11:06:13.270] [INFO] console - b---login
+[2014-12-05 11:06:13.271] [INFO] console - client size after login:::2
+[2014-12-05 11:10:08.297] [INFO] console - []
+[2014-12-05 11:10:13.277] [INFO] console - [ { id: 5,
+    username: 'c',
+    password: 'c',
+    time: Tue Dec 02 2014 19:28:41 GMT+0800 (CST) } ]
+[2014-12-05 11:10:13.960] [INFO] console - there is a user connected
+[2014-12-05 11:10:14.069] [INFO] console - c---login
+[2014-12-05 11:10:14.069] [INFO] console - client size after login:::3
+[2014-12-05 11:11:44.752] [INFO] console - c--logout
+[2014-12-05 11:11:44.753] [INFO] console - client size after logout:::2
+[2014-12-05 11:11:44.934] [INFO] console - there is a user connected
+[2014-12-05 11:11:44.988] [INFO] console - c---login
+[2014-12-05 11:11:44.988] [INFO] console - client size after login:::3
+[2014-12-05 11:12:49.421] [INFO] console - c--logout
+[2014-12-05 11:12:49.422] [INFO] console - client size after logout:::2
